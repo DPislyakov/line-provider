@@ -20,5 +20,5 @@ init(app)
 logger.info("Successfully initialized!")
 
 if __name__ == "__main__":
-    uvicorn.run(app)
-    # uvicorn.run(app, host='0.0.0.0', port=common_config.SERVICE_PORT, log_level=logging.DEBUG)
+    # uvicorn.run(app)
+    uvicorn.run(app, host='0.0.0.0', port=common_config.SERVICE_PORT, log_level=logging.DEBUG)
